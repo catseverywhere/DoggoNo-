@@ -1,7 +1,7 @@
 :root {
   --color-primary: rgba(65, 156, 65, 0.699);
   --color-secondary: rgb(154, 236, 0);
-  --color-accent: rgb(255, 123, 0);
+  --color-accent: rgb(255, 94, 0);
   --color-headings: rgb(21, 77, 21);
   --color-body: rgb(98, 112, 98);
 }
@@ -53,4 +53,27 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow padding: font-size: 1.5rem;
 }
