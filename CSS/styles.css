@@ -559,3 +559,79 @@ a {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.nav {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  color: white;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: rgb(168, 168, 168);
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: rgb(255, 174, 174);
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.logoname {
+  margin: 0;
+  padding: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+  font-weight: 50;
+  color: rgb(255, 113, 94);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  transform: translateY(6px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__item {
+    border: 0;
+  }
+}
