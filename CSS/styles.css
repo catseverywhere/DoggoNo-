@@ -1,8 +1,8 @@
 :root {
-  --color-primary: rgba(65, 156, 65, 0.699);
-  --color-secondary: rgb(86, 184, 94);
+  --color-primary: rgba(0, 197, 211, 0.699);
+  --color-secondary: rgb(93, 219, 209);
   --color-accent: rgb(255, 133, 62);
-  --color-headings: rgb(0, 99, 0);
+  --color-headings: rgb(0, 197, 211, 0.699);
   --color-body: rgb(98, 112, 98);
 }
 *,
@@ -27,6 +27,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -87,9 +88,9 @@ a {
 
 .badges {
   font-size: 2rem;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 0.5rem 2rem;
-  font-weight: bold;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -100,6 +101,8 @@ a {
 .badge--secondary {
   background: var(--color-secondary);
   color: white;
+  border-radius: 50px;
+  padding: 10px;
 }
 .badge--small {
   font-size: 1.6rem;
@@ -176,12 +179,18 @@ a {
   text-transform: uppercase;
   padding: 2rem 3rem;
   border: 0;
-  border-radius: 40px;
+  border-radius: 60px;
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
   margin: 1rem 0;
   outline: 0;
+}
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -239,7 +248,7 @@ a {
 
 .input {
   padding: 1.5rem 3.5rem;
-  border: 2px solid rgb(196, 196, 196);
+  border: 1px solid rgb(196, 196, 196);
   border-radius: 50px;
   outline: 0;
   color: var(--color-headings);
@@ -258,10 +267,11 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
-  margin: 4px;
+  margin: 5px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -537,7 +547,7 @@ a {
 }
 
 .block--dark {
-  background: black;
+  background: rgb(102, 102, 102);
   color: grey;
 }
 
@@ -633,5 +643,55 @@ a {
   }
   .nav__item {
     border: 0;
+  }
+}
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+  align-self: center;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+    padding-bottom: 7rem;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin: 0;
   }
 }
