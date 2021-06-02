@@ -4,27 +4,342 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Proffesional advice and training material for dog lovers">
+    <meta property="og:title" content="DoggoNo!">
+    <meta property="og:description" content="DoggoNo!...">
+    <meta property="og:type" content="website">
+    <title>DoggoNo! - Training tips from £10!</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <header>
+        <nav class="nav collapsible">
+            <div class="logo-container"> 
+            <a href="/"><img src="images/logooo.svg" width="80" alt=""></a>
+            <h3 class="logoname">DoggoNo!</h3>
+            </div>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">Tips </a></li>
+                <li class="nav__item"><a href="#">Online Lessons</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
+                <li class="nav__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header class=" block__header hero__content" data-aos="fade-down">
+                <h1>Training for Pros</h1>
+                <p class="hero__tagline">Proffesional advice and training material for dog lovers</p>
+                <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+            </header>
+            <img class="hero__image" src="images/banner.png" alt="" data-aos="zoom-in">
+        </div>
+    </section>
+    <section class="block container block-domain" data-aos="fade-up">
+        <header class="block__header">
+            <h2>Starting at £10 per month</h2>
+            <p>Get profesional advice and training tips so you and your dog can enjoy your time together.</p>
+        </header>
+        <div class="input-group">
+                        <input type="text" class="input" placeholder="Enter breed here..." />
+            <button class="btn btn--accent">
+                <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#menu"></use>
+                </svg>Search</button>
+        </div>
+        <ul class="list block-domain__prices">
+            <li>pawshake</li>
+            <li>sit</li>
+            <li><span class="badges badge--secondary">down</span></li>
+            <li>wait</li>
+            <li>heel</li>
+            <li>watch me</li>
+        </ul>
+    </section>
+    <section class="block container block-plans" data-aos="slide-up">
+        <div class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">PREMIUM</h3>
+                            <span class="plan__price">£25</span>
+                            <span class="plan__billing-cycle">month</span>
+                            <span class="badges badge--secondary badge--small">25% OFF</span>
+                            <span class="plan__description">Training tips from everyone anytime!</span>
+                    </header>
+                    <div class="card_body">
+                        <ul class="list list--tick">
+                            <li class="list_item">Access 24/7!</li>
+                            <li class="list_item">Free Emergency training call available</li>
+                            <li class="list_item">Free Training Treats!
+                            </li>
+                            <li class="list_item">Automatic renewal!
+                        </ul>
+                        <button class="btn btn--outline btn--block">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">STANDARD</h3>
+                            <span class="plan__price">£15</span>
+                            <span class="plan__billing-cycle">month</span>
+                            <span class="badges badge--secondary badge--small">10% OFF</span>
+                            <span class="plan__description">Advise only when you need them!</span>
+                    </header>
+                    <div class="card_body">
+                        <ul class="list list--tick">
+                            <li class="list_item">Great community!</li>
+                            <li class="list_item">Emergency training call within 24h</li>
+                            <li class="list_item">Free Training Treats!
+                            </li>
+                            <li class="list_item">Automatic renewal!
+                        </ul>
+                        <button class="btn btn--outline btn--block">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">ENTRY</h3>
+                            <span class="plan__price">£10</span>
+                            <span class="plan__billing-cycle">month</span>
+                            <span class="badges badge--secondary badge--small">10% OFF</span>
+                            <span class="plan__description">Training tips upon request!</span>
+                    </header>
+                    <div class="card_body">
+                        <ul class="list list--tick">
+                            <li class="list_item">Great community!</li>
+                            <li class="list_item">Emergency training call within 24h</li>
+                            <li class="list_item">Only renew if you still need it !
+                        </ul>
+                        <button class="btn btn--outline btn--block">BUY NOW</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="block container">
+        <header class="block__header">
+            <h2>Stay connected with the experts!</h2>
+            <p>Daily live training courses and live chat just for you!</p>
+        </header>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#easy"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Super easy to sign up!</h3>
+                <p>Just fill in the form with your dog details or contact anytime at our phone number and you'll have an account within minutes!</p>
+                <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <div>
+                    <source 
+                    type="image/jpg"
+                    srcset="images/easy.jpg">
+                    <img class="feature__image" src="images/easy.jpg" width="80%" alt="">
+                </div>
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#growth"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Great community!</h3>
+                <p>Not just great contact to our experts but also able to discuss with other DoggoNo! members about similar issues!</p>
+                <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <div>
+                    <source 
+                    type="image/jpg"
+                    srcset="images/white.jpg">
+                    <img class="feature__image" src="images/white.jpg" width="80%" alt="">
+                </div>
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#clock"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Training made fun!</h3>
+                <p>It doesn't always have to be repetitive and boring, we have great ideas to keep you and your dog entertained while doing the courses!</p>
+                <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <div>
+                    <source 
+                    type="image/jpg"
+                    srcset="images/easy.jpg">
+                    <img class="feature__image" src="images/ball.jpg" width="80%" alt="">
+                </div>
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#computer"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Expert Support!</h3>
+                <p>When in doubt, just contact one of our experts which are here to assist you. Don't forget, there are no silly questions, we've all been there!</p>
+                <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <div>
+                    <source 
+                    type="image/jpg"
+                    srcset="images/easy.jpg">
+                    <img class="feature__image" src="images/leash.jpg" width="80%" alt="">
+                </div>
+            </picture>
+        </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+            <h2 class="block__heading"> Dog training made easy!
+            </h2>
+            <container class="grid grid--1x2">
+                <img class="block-showcase__image" src="images/works.png" width="100%" alt="" data-aos="slide-right">
+                <ul class="list" data-aos="fade-left">
+                    <li>
+                        <div class="media">
+                            <div class="media__image">
+                                    <svg class="icon icon--primary">
+                                        <use xlink:href="images/sprite.svg#snap"></use>
+                                    </svg>
+                            </div>
+                            <div class="media__body">
+                                <h3 class="media__title">
+                                    Easy Start and Managed Updates</h3>
+                                <p>
+                                    Just create an account and install our app. Once you sign up you will have accesss to our platform and be in contact with our community!
+                                </p>
+                        
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <div class="media__image">
+                                    <svg class="icon icon--primary">
+                                        <use xlink:href="images/sprite.svg#clock"></use>
+                                    </svg>
+                            </div>
+                            <div class="media__body">
+                                <h3 class="media__title">
+                                    Always pick up where you left off</h3>
+                                <p>
+                                    Our app keeps track of the progress and you can always pick up where you left off and of course repeat any course for free!
+                                </p>
+                        
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <div class="media__image">
+                                    <svg class="icon icon--primary">
+                                        <use xlink:href="images/sprite.svg#computer"></use>
+                                    </svg>
+                            </div>
+                            <div class="media__body">
+                                <h3 class="media__title">
+                                    Get notifications and reminders</h3>
+                                <p>
+                                    Unorganised? No problem! We can have send you notifications and updates at the times you set or just choose a plan that work with you!
+                                </p>
+                        
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </container>
+        </header>
+    </section>
+    <section class="block">
+        <header class="block__header">
+            <h2>What our Customers are Saying</h2>
+            <p>We value what you think and always improving the service we offer to you and your dog.</p>
+        </header>
+        <div class="container">
+            <div class="card testimonial" data-aos="zoom-in">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img src="images/suzy.jpg" alt="Happy Customer">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--white icon--small">
+                                <use xlink:href="images/sprite.svg#search"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote class="quote">
+                        <p class="quote__text">
+                            I am just so happy I joined the community, incredible support every step of the way, great tutorial content, and Milly,my dog, loves your treats!
+                        </p>
+                        <footer>
+                            <div class="media">
+                                <div class="media__image">
+                                        <svg class="icon icon--primary quote__line">
+                                            <use xlink:href="images/sprite.svg#line"></use>
+                                        </svg>
+                                </div>
+                                <div class="media__body">
+                                    <h3 class="media__title quote__author">
+                                        Chloe Smith</h3>
+                                    <p class="quote__organisation">
+                                        Wood Green Shelter
+                                    </p>
+                            
+                                </div>
+                            </div>
+                    
+                        </footer>
+                    </blockquote>
+                    
+            
+                </div>
+            
+            </div>
+        
+    
+        </div>
+    </section>
     <footer class="block block--dark footer">
         <div class="container grid footer__sections">
             <section class="collapsible collapsible--expanded footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">
-                        Item 1
+                        Products
                     </h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                </header>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
-                        <li><a href="#" class="href">Training</a></li>
+                        <li><a href="#" class="href">Live classes</a></li>
                         <li><a href="#" class="href">Expert Support</a></li>
                         <li><a href="#" class="href">Online Tutorials</a></li>
                     </ul>
@@ -32,39 +347,51 @@
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">
-                        Item 2
+                        Support
                     </h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                </header>
+                </div>
                 <div class="collapsible__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    <ul class="list">
+                        <li><a href="#" class="href">IT Support</a></li>
+                        <li><a href="#" class="href">Telephone Support</a></li>
+                        <li><a href="#" class="href">Complains</a></li>
+                    </ul>
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">
-                        Item 3
+                        Company
                     </h2>
                         <svg class="icon icon--white collapsible__chevron">
                             <use xlink:href="images/sprite.svg#chevron"></use>
                         </svg>
-                </header>
+                </div>
                 <div class="collapsible__content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    <ul class="list">
+                        <li><a href="#" class="href">What we do</a></li>
+                        <li><a href="#" class="href">Contact</a></li>
+                        <li><a href="#" class="href">Location</a></li>
+                    </ul>
                 </div>
             </section>
-            <section class="footer__brand">
+            <div class="footer__brand">
                 <img src="images/logooo.svg" width="80" alt="">
                 <p class="footer__copyright">Copyright 2021 Iulia Gug</p>
-            </section>
+            </div>
         </div>
-
+    
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

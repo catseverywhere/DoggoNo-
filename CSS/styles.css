@@ -182,7 +182,7 @@ a {
   font-weight: 600;
   font-size: 1.8rem;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   border: 0;
   border-radius: 60px;
   cursor: pointer;
@@ -460,7 +460,8 @@ a {
 }
 
 .testimonial {
-  padding: 3rem;
+  padding: 5rem;
+  margin: 2rem;
 }
 
 .testimonial__image {
@@ -570,6 +571,7 @@ a {
 }
 .block__heading {
   margin-top: 0;
+  padding-top: 2rem;
 }
 
 .block--dark {
@@ -582,13 +584,13 @@ a {
 }
 
 .block--skewed-right {
-  padding-bottom: calc(va(--padding-vertical) +4rem);
+  padding-bottom: calc(va(--padding-vertical) +5rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(va(--padding-vertical) +4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 .container {
@@ -725,6 +727,7 @@ a {
 .block-plans .grid {
   gap: 8rem 4rem;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .block-plans .card {
@@ -756,6 +759,12 @@ a {
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
     gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list .media__title {
+    text-align: center;
   }
 }
 
