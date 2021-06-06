@@ -712,7 +712,7 @@ a {
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
-  margin: 4rem;
+  margin: 4rem auto;
 }
 
 .block-domain__prices {
