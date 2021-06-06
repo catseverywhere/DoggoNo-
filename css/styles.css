@@ -682,6 +682,7 @@ a {
 
 .hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  padding-bottom: calc(va(--padding-vertical) +6rem);
 }
 .hero__tagline {
   font-size: 2rem;
