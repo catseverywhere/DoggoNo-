@@ -12,7 +12,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 62.5%;
 }
 ::selection {
   background: var(--color-secondary);
@@ -24,6 +24,7 @@ body {
   color: var(--color-body);
   line-height: 1.5;
   font-size: 2.4rem;
+  padding: 2rem;
 }
 
 h1,
@@ -460,12 +461,17 @@ a {
 }
 
 .testimonial {
-  padding: 5rem;
+  padding: 3rem;
   margin: 2rem;
 }
 
 .testimonial__image {
   position: relative;
+}
+
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
 }
 .testimonial__image > img {
   width: 100%;
