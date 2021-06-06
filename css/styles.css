@@ -383,7 +383,7 @@ a {
 
 .media {
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .media__title {
@@ -590,12 +590,12 @@ a {
 }
 
 .block--skewed-right {
-  padding-bottom: calc(va(--padding-vertical) +5rem);
+  padding-bottom: calc(va(--padding-vertical) +6rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
-  padding-bottom: calc(va(--padding-vertical) +4rem);
+  padding-bottom: calc(va(--padding-vertical) +6rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
